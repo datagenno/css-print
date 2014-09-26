@@ -1,3 +1,56 @@
 @page{
   margin: 3.0%;
 }
+
+/* table */
+table{
+  width: 100%;
+}
+
+table th{
+  font-weight: bold;
+}
+
+table, table th, table td{
+  border: 0.05cm solid #000;
+}
+
+table th, table td{
+  padding:2.0%;
+}
+
+/* image */
+img{
+  width: 100%;
+  border:none;
+}
+
+/* links */
+a, a:visited {
+  text-decoration: underline;
+}
+
+a:link:after, a:visited:after {
+  content: " (" attr(href) ") ";
+}
+
+/* borders */
+.border{
+  border:0.05cm solid #000;
+}
+
+.border-right{
+  border-right: 0.05cm solid #000;
+}
+
+.border-left{
+  border-left: 0.05cm solid #000;
+}
+
+.border-top{
+  border-top: 0.05cm solid #000;
+}
+
+.border-bottom{
+  border-bottom: 0.05cm solid #000;
+}
