@@ -15,17 +15,23 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   font-size: 100%;
   font-family: inherit;
   vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 100%;
 }
 
 /* remember to define focus styles! */
 :focus {
   outline: 0;
 }
+
 body {
   line-height: 1;
   color: black;
   background: white;
 }
+
 ol, ul {
   list-style: none;
 }
