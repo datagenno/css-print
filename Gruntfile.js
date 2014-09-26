@@ -7,7 +7,7 @@ module.exports = function(grunt) {
     cssmin: {
       combine: {
         files: {
-          'css-print.min.css': ['css/reset.css']
+          'css-print.min.css': ['css/reset.css', 'css/base.css', 'css/grid.css']
         }
       },
 

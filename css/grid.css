@@ -1,0 +1,66 @@
+/* page, rows and coluns */
+.page{
+  width: 99.78%;
+  height: 99.78%;
+  display: block;
+}
+
+.row{
+  width: 100%;
+  display: table;
+  height: auto;
+}
+
+.col-5, .col-4, .col-3, .col-2, .col-1{
+  height: auto;
+  float: left;
+  padding:0.7cm;
+}
+
+.col-5{
+  width: 100%;
+}
+
+.col-4{
+  width: 80%;
+}
+
+.col-3{
+  width: 60%;
+}
+
+.col-2{
+  width: 40%;
+}
+
+.col-1{
+  width: 20%;
+}
+
+/* borders */
+.border{
+  border:0.05cm solid #000;
+}
+
+.border-right{
+  border-right: 0.05cm solid #000;
+}
+
+.border-left{
+  border-left: 0.05cm solid #000;
+}
+
+.border-top{
+  border-top: 0.05cm solid #000;
+}
+
+.border-bottom{
+  border-bottom: 0.05cm solid #000;
+}
+
+@media screen{
+  .page{
+    width: 793px;
+    margin: 0 auto;
+  }
+}
