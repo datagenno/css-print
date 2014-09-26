@@ -14,7 +14,8 @@
 .col-5, .col-4, .col-3, .col-2, .col-1{
   height: auto;
   float: left;
-  padding:0.7cm;
+  padding:3.0%;
+  display: block;
 }
 
 .col-5{
@@ -62,5 +63,7 @@
   .page{
     width: 21cm;
     margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 }
