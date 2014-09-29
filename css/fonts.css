@@ -5,6 +5,11 @@ body{
   letter-spacing: 0.1em;
 }
 
+p{
+  widows: 3;
+  orphans: 3;
+}
+
 /* sizes */
 .font-10{
   font-size: 1.0em;
