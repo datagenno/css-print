@@ -39,18 +39,18 @@
 }
 
 @media screen{
-  .page{
+  body{
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 50px;
   }
 
-  .page[data-mode='a4-portrait']{
+  body[data-mode='a4-portrait']{
     width: 21.0cm;
     height: 29.7cm;
   }
 
-  .page[data-mode='a4-landscape']{
+  body[data-mode='a4-landscape']{
     width: 29.7cm;
     height: 21.0cm;
   }
