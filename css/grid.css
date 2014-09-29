@@ -39,10 +39,13 @@
 }
 
 @media screen{
-  body{
-    margin: 0 auto;
+  .page{
     margin-top: 50px;
     margin-bottom: 50px;
+  }
+
+  body{
+    margin: 0 auto;
   }
 
   body[data-mode='a4-portrait']{
