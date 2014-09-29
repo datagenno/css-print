@@ -14,7 +14,7 @@
 .col-5, .col-4, .col-3, .col-2, .col-1{
   height: auto;
   float: left;
-  padding:3.0%;
+  padding:2.0%;
   display: block;
 }
 
@@ -40,9 +40,18 @@
 
 @media screen{
   .page{
-    width: 21cm;
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 50px;
+  }
+
+  .page[data-mode='a4-portrait']{
+    width: 21.0cm;
+    height: 29.7cm;
+  }
+
+  .page[data-mode='a4-landscape']{
+    width: 29.7cm;
+    height: 21.0cm;
   }
 }
