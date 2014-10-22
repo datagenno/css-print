@@ -1,145 +1,60 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="pt-br">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Css-print : ">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Css-print</title>
+    <title>CSS PRINT</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
   </head>
 
   <body>
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">CSS PRINT</a>
+        </div>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/datagenno/css-print">View on GitHub</a>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="https://github.com/datagenno/css-print" target="_blank">Repository</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
 
-          <h1 id="project_title">Css-print</h1>
-          <h2 id="project_tagline"></h2>
+    <article class="container">
+      <section>
+        <div class="jumbotron">
+          <div class="container text-center">
+            <h1>Create your print pages easily</h1>
+            <p>Css framework with the basic rules for you to create your pages ready for printing</p>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/datagenno/css-print/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/datagenno/css-print/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
+            <br>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>
-<a name="css-print-documentation" class="anchor" href="#css-print-documentation"><span class="octicon octicon-link"></span></a>CSS PRINT DOCUMENTATION</h1>
-
-<p>CSS PRINT is a simple framework to help you create pages ready for printing.</p>
-
-<h3>
-<a name="credits" class="anchor" href="#credits"><span class="octicon octicon-link"></span></a>CREDITS</h3>
-
-<p>Developers:</p>
-
-<ul>
-<li>Julio Betta <a href="mailto:juliobetta@gmail.com">juliobetta@gmail.com</a>
-</li>
-<li>Rodolfo Barreto <a href="mailto:rodolfobarretoweb@gmail.com">rodolfobarretoweb@gmail.com</a>
-</li>
-</ul>
-
-<h3>
-<a name="grid" class="anchor" href="#grid"><span class="octicon octicon-link"></span></a>GRID</h3>
-
-<p>In body tag you have to describe how you print your document. In this version of css print, we will support a4 pages only. So, lets go to the examples.</p>
-
-<pre><code>&lt;body data-mode="a4-portrait"&gt;
-    All content here
-&lt;/body&gt;
-
-OR
-
-&lt;body data-mode="a4-landscape"&gt;
-    All contente here
-&lt;/body&gt;
-</code></pre>
-
-<p>Note: Always use <code>*-portrait</code> or <code>*-landscape</code> mode, regardless of the document size. This will allow to preview the page before printing.</p>
-
-<hr>
-
-<p><code>.page</code> - Every page must be within the page class.</p>
-
-<p><strong>Note: If you need multiple pages, you have to add the <code>page</code> class to the element.</strong></p>
-
-<pre><code>&lt;div class='page'&gt;
-    All contents of the first page here
-&lt;/div&gt;
-
-&lt;div class='page'&gt;
-    All contents of the second page here
-&lt;/div&gt;
-</code></pre>
-
-<hr>
-
-<p><code>.row</code> - Define rows of the columns, like in twitter bootstrap.</p>
-
-<pre><code>&lt;div class='row'&gt;
-    &lt;div class="col-1"&gt;&lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
-
-<h3>
-<a name="base" class="anchor" href="#base"><span class="octicon octicon-link"></span></a>BASE</h3>
-
-<p>This file contains rules about simple tags, such as tables, links and two special cases.</p>
-
-<p><code>.border</code> - Adds border in all element</p>
-
-<p><code>.border-right</code> - Adds border in right of the element</p>
-
-<p><code>.border-left</code> - Adds border in left of the element</p>
-
-<p><code>.border-bottom</code> - Adds border in the bottom of the element</p>
-
-<p><code>.border-top</code> - Adds border in the top of the element</p>
-
-<hr>
-
-<p><code>.no-print</code> - Hides content from print</p>
-
-<h3>
-<a name="fonts" class="anchor" href="#fonts"><span class="octicon octicon-link"></span></a>FONTS</h3>
-
-<p><code>.font-*</code> - Defines the font size, ranging from 10 to 26.</p>
-
-<pre><code>Ex: &lt;p class="font-10"&gt;Text&lt;/p&gt;
-</code></pre>
-
-<hr>
-
-<p><code>.text-left</code> - Aligns text to left</p>
-
-<p><code>.text-right</code> - Aligns text to right</p>
-
-<p><code>.text-center</code> - Aligns text to center</p>
-
-<hr>
-
-<p><code>.font-serif</code> - Applies serif to font face</p>
+            <p><a class="btn btn-success btn-lg" href="https://github.com/datagenno/css-print/archive/master.zip" target="_blank" role="button">Download</a></p>
+          </div>
+        </div>
       </section>
-    </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Css-print maintained by <a href="https://github.com/datagenno">datagenno</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+      <section>
+        <header class="page-header">
+          <h2>Examples</h2>
+        </header>
 
-    
-
+        <ul>
+          <li><a href="examples/basic.html">Basic page</a></li>
+        </ul>
+      </section>
+    </article>
   </body>
 </html>
