@@ -37,24 +37,3 @@
 .col-1{
   width: 20%;
 }
-
-@media screen{
-  .page{
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-
-  body{
-    margin: 0 auto;
-  }
-
-  body[data-mode='a4-portrait']{
-    width: 21.0cm;
-    height: 29.7cm;
-  }
-
-  body[data-mode='a4-landscape']{
-    width: 29.7cm;
-    height: 21.0cm;
-  }
-}
