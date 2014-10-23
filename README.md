@@ -1,16 +1,16 @@
 # CSS PRINT DOCUMENTATION
 
-CSS PRINT is a simple framework for help you build pages ready for printing.
+CSS PRINT is a simple framework to help you create pages ready for printing.
 
 ###CREDITS
 
 Developers:
-    Julio Betta <juliobetta@gmail.com> <br>
-    Rodolfo Barreto <rodolfobarretoweb@gmail.com>
+* Julio Betta <juliobetta@gmail.com>
+* Rodolfo Barreto <rodolfobarretoweb@gmail.com>
 
 ###GRID
 
-In body tag you have to describe how you print your document. In this version of css print, we will support a4 pages. So, lets go to exemples.
+In body tag you have to describe how you print your document. In this version of css print, we will support a4 pages only. So, lets go to the examples.
 
     <body data-mode="a4-portrait">
         All content here
@@ -22,12 +22,11 @@ In body tag you have to describe how you print your document. In this version of
         All contente here
     </body>
 
-Note: Always have portrait mode and landscape mode. Independent of the document size.
-That configurate serves to have a preview of the document.
+Note: Always use `*-portrait` or `*-landscape` mode, regardless of the document size. This will allow to preview the page before printing.
 
 -------------------------------------------------------------------------------
 
-.page - Every page must be within the page class. 
+`.page` - Every page must be within the page class.
 
 **Note: If you need multiple pages, you have to add the ``page`` class to the element.**
 
@@ -41,7 +40,7 @@ That configurate serves to have a preview of the document.
 
 -------------------------------------------------------------------------------
 
-.row - Define rows of the columns like bootstrap style
+`.row` - Define rows of the columns, like in twitter bootstrap.
 
     <div class='row'>
         <div class="col-1"></div>
@@ -49,37 +48,36 @@ That configurate serves to have a preview of the document.
 
 ###BASE
 
-That file have rules about simples tags like: tables, links and two special case.
+This file contains rules about simple tags, such as tables, links and two special cases.
 
-.border - Add border in all element
+`.border` - Adds border in all element
 
-.border-right - Add border in right of the element
+`.border-right` - Adds border in right of the element
 
-.border-left - Add border in left of the element
+`.border-left` - Adds border in left of the element
 
-.border-bottom - Add border in the bottom of the element
+`.border-bottom` - Adds border in the bottom of the element
 
-.border-top - Add border in the top of the element
+`.border-top` - Adds border in the top of the element
 
 -------------------------------------------------------------------------------
 
-.no-print - Hide the content 
+`.no-print` - Hides content from print
 
 ###FONTS
 
-.font-* - Define the size of font. The sizes ranging from 10 to 26
+`.font-*` - Defines the font size, ranging from 10 to 26.
 
     Ex: <p class="font-10">Text</p>
 
 -------------------------------------------------------------------------------
 
-.text-left - Float text to left
+`.text-left` - Aligns text to left
 
-.text-right - Float text to right
+`.text-right` - Aligns text to right
 
-.text-center - Float text to center
+`.text-center` - Aligns text to center
 
 -------------------------------------------------------------------------------
 
-.font-serif - Apply serif style of the text
-
+`.font-serif` - Applies serif to font face
