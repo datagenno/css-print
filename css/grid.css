@@ -1,8 +1,9 @@
 /* page, rows and coluns */
 .page{
   width: 99.78%;
-  height: 99.78%;
+  height: 100%;
   display: block;
+  overflow: hidden;
 }
 
 .row{
@@ -14,7 +15,7 @@
 .col-5, .col-4, .col-3, .col-2, .col-1{
   height: auto;
   float: left;
-  padding:2.0%;
+  padding:0.2cm;
   display: block;
 }
 

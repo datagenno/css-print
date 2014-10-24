@@ -10,22 +10,6 @@ Developers:
 
 ###GRID
 
-In body tag you have to describe how you print your document. In this version of css print, we will support a4 pages only. So, lets go to the examples.
-
-    <body data-mode="a4-portrait">
-        All content here
-    </body>
-
-    OR
-
-    <body data-mode="a4-landscape">
-        All contente here
-    </body>
-
-Note: Always use `*-portrait` or `*-landscape` mode, regardless of the document size. This will allow to preview the page before printing.
-
--------------------------------------------------------------------------------
-
 `.page` - Every page must be within the page class.
 
 **Note: If you need multiple pages, you have to add the ``page`` class to the element.**
