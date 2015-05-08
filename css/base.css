@@ -2,13 +2,6 @@
   margin: 0.5cm;
 }
 
-/* Hidden content in screen mode */
-@media screen {
-  * {
-    display: none;
-  }
-}
-
 /* table */
 table{
   width: 100%;
@@ -60,6 +53,12 @@ a:link:after, a:visited:after {
 
 .border-bottom{
   border-bottom: 0.05cm solid #000;
+}
+
+/* Well */
+.well {
+  padding: 1.0%;
+  background: #C9C9C9;
 }
 
 /* no print */
