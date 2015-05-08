@@ -1,0 +1,21 @@
+{
+  "name": "CSS PRINT",
+  "version": "1.0.0",
+  "homepage": "https://github.com/datagenno/css-print",
+  "authors": [
+    "Rodolfo Ribeiro Barreto <rodolfobarretoweb@gmail.com>"
+  ],
+  "description": "CSS PRINT is a simple framework to help you create pages ready for printin",
+  "keywords": [
+    "css",
+    "print",
+    "print",
+    "css"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    ".gitignore"
+  ]
+}
