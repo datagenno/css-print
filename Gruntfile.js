@@ -7,7 +7,7 @@ module.exports = function(grunt) {
     cssmin: {
       combine: {
         files: {
-          'css-print.min.css': ['css/reset.css', 'css/base.css', 'css/grid.css', 'css/fonts.css']
+          'dist/css-print.min.css': ['css/reset.css', 'css/base.css', 'css/grid.css', 'css/fonts.css']
         }
       },
 
@@ -15,7 +15,7 @@ module.exports = function(grunt) {
         files : [{
           expand : true,
           cwd : '/',
-          src : ['css-print.min.css'],
+          src : ['dist/css-print.min.css'],
           dest : 'src',
           ext : '.min.css'
         }]
