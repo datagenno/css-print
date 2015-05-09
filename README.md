@@ -2,6 +2,12 @@
 
 CSS PRINT is a simple framework to help you create pages ready for printing.
 
+### INSTALL WITH BOWER
+
+    "devDependencies": {
+      "css-print":"1.0.0"
+    }
+
 ###CREDITS
 
 Developers:
