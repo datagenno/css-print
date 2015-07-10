@@ -42,3 +42,9 @@
 .col-1{
   width: 16.6666666667%;
 }
+
+/* Centralizes columns */
+.col-center{
+  float: none;
+  margin: 0 auto;
+}
