@@ -29,7 +29,7 @@ ol li {
 }
 
 ol li:before {
-  content: counters(item, ".") " "; counter-increment: item;
+  content: counters(item, ".") ". "; counter-increment: item;
 }
 
 /* image */
