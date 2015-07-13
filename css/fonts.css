@@ -10,6 +10,10 @@ p{
   orphans: 3;
 }
 
+b, strong {
+  font-weight: bold;
+}
+
 /* sizes */
 .font-10{
   font-size: 1.0em;
